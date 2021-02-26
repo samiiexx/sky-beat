@@ -1,9 +1,10 @@
 // Navigation Menu Toggler
-var header = document.querySelector(".js-header");
-var hamburgerMenu = document.querySelector(".hamburger-menu");
+var menuToggle = document.querySelector(".toggle");
+var showcase = document.querySelector(".showcase");
 
-hamburgerMenu.addEventListener("click", function () {
-    header.classList.toggle("menu-open");
+menuToggle.addEventListener("click", function () {
+    menuToggle.classList.toggle("active");
+    showcase.classList.toggle("active");
 });
 
 // JQuery Scripts

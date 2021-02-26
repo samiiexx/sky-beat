@@ -13,3 +13,140 @@ a {
     text-decoration: none;
     color: $dark;
 }
+
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    @include flex;
+    background: $dark;
+    color: $white;
+    z-index: 2;
+    transition: $normal;
+}
+
+.showcase.active {
+    right: 300px;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    @include flex;
+}
+
+.logo {
+    cursor: pointer;
+    height: auto;
+    width: 80px;
+}
+
+.toggle {
+    position: relative;
+    cursor: pointer;
+    display: block;
+}
+
+.toggle .fa-times {
+    display: none;
+}
+
+.active .toggle .fa-times {
+    display: block;
+}
+
+.active .toggle .fa-bars {
+    display: none;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.hero {
+    position: relative;
+    z-index: 10;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(251, 121, 92, 0.5),
+        rgba(243, 177, 162, 0.5)
+    );
+}
+
+.h1-title {
+    font-size: 5rem;
+    text-transform: uppercase;
+    @include media-max("lg") {
+        font-size: 2rem;
+    }
+}
+
+.hero-text {
+    font-size: 1.2rem;
+}
+
+.hero-cta .btn-hero:last-child {
+    margin-left: 1rem;
+}
+
+.btn-hero {
+    transition: $fast;
+}
+
+.btn-hero:hover {
+    letter-spacing: 5px;
+}
+
+.social {
+    position: absolute;
+    bottom: 2rem;
+    z-index: 10;
+    @include flex(center);
+}
+
+.social-link {
+    display: inline-block;
+    transition: $normal;
+}
+
+.social-link:hover {
+    transform: translateY(-15px);
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    @include flex(center);
+}
+
+.nav-list {
+    position: relative;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+}
+
+.nav-link:hover {
+    color: $primary;
+}
