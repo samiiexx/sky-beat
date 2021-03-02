@@ -1,5 +1,5 @@
 # Sky Beat Website
-Website project for Sky beat 
+Test project for a full screen video background.
 
 ![Coffee Hub](screenshot.jpg)
 
