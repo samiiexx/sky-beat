@@ -1,5 +1,5 @@
-# Coffee Hub Website
-Website project for Coffee Hub.
+# Sky Beat Website
+Website project for Sky beat 
 
 ![Coffee Hub](screenshot.jpg)
 
